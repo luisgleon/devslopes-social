@@ -193,7 +193,7 @@
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hv-pA-nfY" customClass="FancyBtn" customModule="devslopes_social" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hv-pA-nfY" customClass="RoundBtn" customModule="devslopes_social" customModuleProvider="target">
                                                 <rect key="frame" x="278" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.86666666670000003" green="0.17254901959999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -214,11 +214,11 @@
                                     <constraint firstAttribute="trailing" secondItem="TGA-60-kKt" secondAttribute="trailing" constant="8" id="igR-Ya-Lab"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="348" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x5F-0h-4Mi">
-                                <rect key="frame" x="0.0" y="162" width="375" height="505"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="348" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x5F-0h-4Mi">
+                                <rect key="frame" x="0.0" y="154" width="375" height="513"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="348" id="FOD-wR-b7l">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="348" id="FOD-wR-b7l" customClass="PostCell" customModule="devslopes_social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="348"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FOD-wR-b7l" id="BYo-93-USo">
@@ -247,7 +247,7 @@
                                                                             <color key="textColor" red="0.86666666670000003" green="0.17254901959999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="ciO-b1-D0O" customClass="CircleView" customModule="devslopes_social" customModuleProvider="target">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="ciO-b1-D0O">
                                                                             <rect key="frame" x="267" y="0.0" width="60" height="60"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="60" id="MbS-T2-eLz"/>
@@ -257,11 +257,14 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="aiH-SH-6Tf">
-                                                                    <rect key="frame" x="0.0" y="68" width="327" height="125.5"/>
+                                                                    <rect key="frame" x="0.0" y="68" width="327" height="159.5"/>
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v7e-JG-MCl">
-                                                                    <rect key="frame" x="0.0" y="201.5" width="327" height="84"/>
+                                                                    <rect key="frame" x="0.0" y="235.5" width="327" height="50"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="GdN-R0-TgS"/>
+                                                                    </constraints>
                                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -304,6 +307,14 @@
                                                 <constraint firstItem="iZh-gA-Hlq" firstAttribute="leading" secondItem="BYo-93-USo" secondAttribute="leading" constant="16" id="i5W-Qh-pSJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="caption" destination="v7e-JG-MCl" id="Rxf-yz-Ubf"/>
+                                            <outlet property="likesLbl" destination="Xoc-DS-2S4" id="pTE-AC-mg2"/>
+                                            <outlet property="postImg" destination="aiH-SH-6Tf" id="EdH-gG-HOI"/>
+                                            <outlet property="profileImg" destination="ywD-tx-ywg" id="wlY-2i-CC2"/>
+                                            <outlet property="usernameLbl" destination="QGm-vb-J6f" id="cnz-CE-02t"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -316,13 +327,14 @@
                             <constraint firstAttribute="trailing" secondItem="UVS-bx-Y96" secondAttribute="trailing" id="Jmc-it-U9H"/>
                             <constraint firstItem="B6O-QV-Z0d" firstAttribute="top" secondItem="UVS-bx-Y96" secondAttribute="bottom" constant="16" id="PC5-ha-Odu"/>
                             <constraint firstAttribute="trailing" secondItem="B6O-QV-Z0d" secondAttribute="trailing" constant="16" id="Q3g-cb-1tJ"/>
-                            <constraint firstItem="x5F-0h-4Mi" firstAttribute="top" secondItem="B6O-QV-Z0d" secondAttribute="bottom" constant="16" id="agh-gv-4N4"/>
+                            <constraint firstItem="x5F-0h-4Mi" firstAttribute="top" secondItem="B6O-QV-Z0d" secondAttribute="bottom" constant="8" id="agh-gv-4N4"/>
                             <constraint firstItem="UVS-bx-Y96" firstAttribute="top" secondItem="anO-gT-3lv" secondAttribute="top" id="f4w-xW-jiZ"/>
                             <constraint firstItem="x5F-0h-4Mi" firstAttribute="leading" secondItem="anO-gT-3lv" secondAttribute="leading" id="jPb-2c-yfX"/>
                             <constraint firstItem="Xwg-DS-73F" firstAttribute="top" secondItem="x5F-0h-4Mi" secondAttribute="bottom" id="qkw-xT-rs8"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="x5F-0h-4Mi" id="wuy-hq-RDV"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="eh1-G4-hei"/>
                     </connections>
                 </viewController>
