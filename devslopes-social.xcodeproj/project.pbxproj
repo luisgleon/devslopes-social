@@ -135,18 +135,18 @@
 		AAC933D11F08A0BC00F0E4BC /* devslopes-social */ = {
 			isa = PBXGroup;
 			children = (
-				AAC461651F0AA75B00B829BB /* Services */,
-				AA10D6FA1F09B605002B6AD6 /* devslopes-social.entitlements */,
-				AA815EC91F0958320020D621 /* Util */,
 				AA94FA511F08AB430063C941 /* Model */,
 				AA94FA501F08AB3A0063C941 /* View */,
 				AA94FA4F1F08AB280063C941 /* Controller */,
-				AAC933E41F08A26800F0E4BC /* GoogleService-Info.plist */,
+				AAC461651F0AA75B00B829BB /* Services */,
+				AA815EC91F0958320020D621 /* Util */,
 				AAC933D21F08A0BC00F0E4BC /* AppDelegate.swift */,
 				AAC933D61F08A0BC00F0E4BC /* Main.storyboard */,
 				AAC933D91F08A0BC00F0E4BC /* Assets.xcassets */,
 				AAC933DB1F08A0BC00F0E4BC /* LaunchScreen.storyboard */,
 				AAC933DE1F08A0BC00F0E4BC /* Info.plist */,
+				AAC933E41F08A26800F0E4BC /* GoogleService-Info.plist */,
+				AA10D6FA1F09B605002B6AD6 /* devslopes-social.entitlements */,
 			);
 			path = "devslopes-social";
 			sourceTree = "<group>";
