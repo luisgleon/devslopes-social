@@ -14,6 +14,7 @@
 		AA815ECF1F095C900020D621 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA815ECE1F095C900020D621 /* FancyField.swift */; };
 		AA815ED11F095E0A0020D621 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA815ED01F095E0A0020D621 /* FancyBtn.swift */; };
 		AA8C50081F09DBC500564F65 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8C50071F09DBC500564F65 /* FeedVC.swift */; };
+		AA8C500A1F0A034A00564F65 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8C50091F0A034A00564F65 /* CircleView.swift */; };
 		AAC933D31F08A0BC00F0E4BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC933D21F08A0BC00F0E4BC /* AppDelegate.swift */; };
 		AAC933D51F08A0BC00F0E4BC /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC933D41F08A0BC00F0E4BC /* SignInVC.swift */; };
 		AAC933D81F08A0BC00F0E4BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC933D61F08A0BC00F0E4BC /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		AA815ECE1F095C900020D621 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		AA815ED01F095E0A0020D621 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		AA8C50071F09DBC500564F65 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		AA8C50091F0A034A00564F65 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		AAC933CF1F08A0BC00F0E4BC /* devslopes-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "devslopes-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC933D21F08A0BC00F0E4BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAC933D41F08A0BC00F0E4BC /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				AA815ECC1F095A790020D621 /* RoundBtn.swift */,
 				AA815ECE1F095C900020D621 /* FancyField.swift */,
 				AA815ED01F095E0A0020D621 /* FancyBtn.swift */,
+				AA8C50091F0A034A00564F65 /* CircleView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA8C500A1F0A034A00564F65 /* CircleView.swift in Sources */,
 				AA815ECF1F095C900020D621 /* FancyField.swift in Sources */,
 				AAC933D51F08A0BC00F0E4BC /* SignInVC.swift in Sources */,
 				AA815ECD1F095A790020D621 /* RoundBtn.swift in Sources */,
